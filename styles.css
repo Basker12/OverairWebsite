@@ -48,6 +48,11 @@
     font-size: 60px;
     font-weight: 550;
 }
+.bigP {
+    font-size: 24px;
+    font-weight: 350;
+    letter-spacing: 1px;
+}
 .sticky {
     position: fixed;
     top: 0;
@@ -72,6 +77,9 @@ nav {
     justify-content: space-between;
     padding: 0 50px 0 25px;
     flex-wrap: wrap;
+}
+header {
+    height: 80px;
 }
 .outline {
     color: #EC008C !important;
@@ -203,6 +211,9 @@ input[type="checkbox"] {
     .smallerLogo {
         height: 50% !important;
         width: 50% !important;
+    }
+    .box {
+        flex-direction: column !important;
     }
 }
 /* Nav */
@@ -349,3 +360,20 @@ a.coolBtn:hover{
     width: 100vw;
     background-color: white;
 }
+/* Main Content */
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box > * {
+    display: grid;
+    place-items: center;
+    flex: 1 1 calc(100% / 3);
+    padding: 25px 25px;
+}
+.titles {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* Main Content */
