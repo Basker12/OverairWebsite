@@ -4,20 +4,8 @@ const closeRepair = document.querySelector('#closeRepair');
 
 repairBox.addEventListener('click', () => {
     document.querySelector('#mySidenav').style.width = "100%";
+    showAnim();
 
-    let delayAnim = 1000;
-
-    setTimeout(function () {
-
-        let vis = document.querySelectorAll('.notVisible');
-        if (vis.length === 0) {
-            return null;
-        } else {
-            const hiddenElement = document.querySelectorAll('.notVisible');
-            hiddenElement.forEach(el => el.classList.add('visible'));
-        }
-
-    }, delayAnim);
 /*
     function counter(id, start, end, duration) {
         let obj = document.getElementById(id),
@@ -38,26 +26,7 @@ repairBox.addEventListener('click', () => {
 });
 
 closeRepair.addEventListener('click', () => {
-    /*
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-
-            if (entry.isIntersecting) {
-                entry.target.classList.replace('visible','notVisible');
-            }
-        });
-    });
-
-    const hiddenElements = document.querySelectorAll('.visible');
-    hiddenElements.forEach((el) => observer.observe(el));
-*/
-    let vis = document.querySelectorAll('.visible');
-    if (vis.length === 0) {
-        return null;
-    } else {
-        const hiddenElement = document.querySelectorAll('.visible');
-        hiddenElement.forEach(el => el.classList.replace('visible','notVisible'));
-    }
+    closeAnim();
 
     let delayAnim = 1000;
 
@@ -75,20 +44,7 @@ const closeUpgrade = document.querySelector('#closeUpgrade');
 
 upgradeBox.addEventListener('click', () => {
     document.querySelector('#myUpgrade').style.width = "100%";
-
-    let delayAnim = 1000;
-
-    setTimeout(function () {
-
-        let vis = document.querySelectorAll('.notVisible');
-        if (vis.length === 0) {
-            return null;
-        } else {
-            const hiddenElement = document.querySelectorAll('.notVisible');
-            hiddenElement.forEach(el => el.classList.add('visible'));
-        }
-
-    }, delayAnim);
+    showAnim();
 /*
     function counter(id, start, end, duration) {
         let obj = document.getElementById(id),
@@ -109,13 +65,7 @@ upgradeBox.addEventListener('click', () => {
 });
 
 closeUpgrade.addEventListener('click', () => {
-    let vis = document.querySelectorAll('.visible');
-    if (vis.length === 0) {
-        return null;
-    } else {
-        const hiddenElement = document.querySelectorAll('.visible');
-        hiddenElement.forEach(el => el.classList.replace('visible','notVisible'));
-    }
+    closeAnim();
 
     let delayAnim = 1000;
 
@@ -132,20 +82,7 @@ const recoverBox = document.querySelector('#openRecover');
 const closeRecover = document.querySelector('#closeRecover');
 recoverBox.addEventListener('click', () => {
     document.querySelector('#myRecover').style.width = "100%";
-
-    let delayAnim = 1000;
-
-    setTimeout(function () {
-
-        let vis = document.querySelectorAll('.notVisible');
-        if (vis.length === 0) {
-            return null;
-        } else {
-            const hiddenElement = document.querySelectorAll('.notVisible');
-            hiddenElement.forEach(el => el.classList.add('visible'));
-        }
-
-    }, delayAnim);
+    showAnim();
 
 /*
     function counter(id, start, end, duration) {
@@ -168,13 +105,7 @@ recoverBox.addEventListener('click', () => {
 });
 
 closeRecover.addEventListener('click', () => {
-    let vis = document.querySelectorAll('.visible');
-    if (vis.length === 0) {
-        return null;
-    } else {
-        const hiddenElement = document.querySelectorAll('.visible');
-        hiddenElement.forEach(el => el.classList.replace('visible','notVisible'));
-    }
+    closeAnim();
 
     let delayAnim = 1000;
 
@@ -191,21 +122,7 @@ const closePurchase = document.querySelector('#closePurchase');
 
 purchaseBox.addEventListener('click', () => {
     document.querySelector('#myPurchase').style.width = "100%";
-
-    let delayAnim = 1000;
-
-    setTimeout(function () {
-
-        let vis = document.querySelectorAll('.notVisible');
-        if (vis.length === 0) {
-            return null;
-        } else {
-            const hiddenElement = document.querySelectorAll('.notVisible');
-            hiddenElement.forEach(el => el.classList.add('visible'));
-        }
-
-    }, delayAnim);
-
+    showAnim();
 
 /*
     function counter(id, start, end, duration) {
@@ -228,13 +145,7 @@ purchaseBox.addEventListener('click', () => {
 });
 
 closePurchase.addEventListener('click', () => {
-    let vis = document.querySelectorAll('.visible');
-    if (vis.length === 0) {
-        return null;
-    } else {
-        const hiddenElement = document.querySelectorAll('.visible');
-        hiddenElement.forEach(el => el.classList.replace('visible','notVisible'));
-    }
+    closeAnim();
 
     let delayAnim = 1000;
 
@@ -244,3 +155,28 @@ closePurchase.addEventListener('click', () => {
 
 });
 /* ------------------------------------------------------------------ */
+function showAnim () {
+    let delayAnim = 1000;
+
+    setTimeout(function () {
+
+        let vis = document.querySelectorAll('.notVisible');
+        if (vis.length === 0) {
+            return null;
+        } else {
+            const hiddenElement = document.querySelectorAll('.notVisible');
+            hiddenElement.forEach(el => el.classList.add('visible'));
+        }
+
+    }, delayAnim);
+}
+
+function closeAnim () {
+    let vis = document.querySelectorAll('.visible');
+    if (vis.length === 0) {
+        return null;
+    } else {
+        const hiddenElement = document.querySelectorAll('.visible');
+        hiddenElement.forEach(el => el.classList.replace('visible','notVisible'));
+    }
+}
