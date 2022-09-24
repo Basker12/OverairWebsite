@@ -14,8 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icon -->
     <link rel="stylesheet" href="styles.css">
-    <script src="navScript.js" async></script>
-    <script src="script.js" async></script>
+    <script src="navScript.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="sideScript.js" defer></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font Awesome -->
@@ -68,7 +69,7 @@
             <br />
             <a class="coolBtn" href="https://devs.overair.co.uk" target="_blank">Overair-Digital Website</a>
         </div>
-        <div class="test">
+        <div>
             <div class="bottomLeft">
                 <h2 class="font2 yup"><a class="exeLink" href="https://www.google.com/maps/place/OverAir/@50.7235236,-3.5276248,141m/data=!3m2!1e3!5s0x486da43dd2403eeb:0xef822e581b12c6fc!4m13!1m7!3m6!1s0x486da43c5237e941:0x311416f3425aa373!2s18+Southernhay+W,+Exeter+EX1+1PJ!3b1!8m2!3d50.7227189!4d-3.5271738!3m4!1s0x486da69dfe6099bd:0xba213cb6c09c703!8m2!3d50.7235741!4d-3.527422?hl=en" target="_blank">Exeter, Princesshay</a></h2>
             </div>
@@ -77,32 +78,151 @@
 
     <div class="seperator"></div>
 
-    <div class="mainContent">
-        <div class="box" id="counterSection">
 
-            <div class="titles" style="border: 1px solid black;">
-                <h1 class="bigH1 titles fontPink">[</h1> <h1 class="bigH1 titles">Repair</h1> <h1 class="bigH1 fontPink titles">]</h1>
-                <button>Click Me</button>
-                <!--
-                <lord-icon
-                        src="https://cdn.lordicon.com/xhdhjyqy.json"
-                        trigger="loop"
-                        style="width:32px;height:32px; rotate: 270deg;">
-                </lord-icon>
-                -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" id="closeRepair"><i class="fa-solid fa-xmark fa-2x closebtn"></i></a>
+
+        <div class="innerNavContainer">
+            <h1 class="bigH1 titles fontPink">[</h1> <h1 class="bigH1 titles">REPAIR</h1> <h1 class="bigH1 titles fontPink">]</h1>
+        </div>
+        <br />
+        <div class="section-container">
+            <div class="columns content">
+                <div class="content-container">
+                    <p class="bigP font2 notVisible" style="padding: 12px 12px;">Working exclusively with Apple products, we are also certified Mac Technicians, meaning we use Apple diagnostics and Apple parts where needed.</p>
+                </div>
             </div>
-
-            <div class="hidden">
-                <p class="font2 bigP">Working exclusively with Apple products, we are also certified Mac Technicians, meaning we use Apple diagnostics and Apple parts where needed.</p>
+            <div class="columns image notVisible">
+                <img class="lazy" src="https://dummyimage.com/100/00ff48/ff0000.png&text=Image+Found" data-src="Images/bg.jpg" data-srcset="Images/bg.jpg" alt="" style="height: 100%; width: 100%;" />
             </div>
-
-            <div class="hidden">
-                <h2 id="count1">1000</h2>
-                <h1>Repairs Completed</h1>
-            </div>
-
         </div>
     </div>
+
+    <div id="myUpgrade" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" id="closeUpgrade"><i class="fa-solid fa-xmark fa-2x closebtn"></i></a>
+
+        <div class="innerNavContainer">
+            <h1 class="bigH1 titles fontPink">[</h1> <h1 class="bigH1 titles">UPGRADE</h1><h1 class="bigH1 titles fontPink">]</h1>
+            <br />
+        </div>
+        <br />
+        <div class="section-container">
+            <div class="columns content">
+                <div class="content-container">
+                    <p class="bigP font2 notVisible" style="padding: 12px 12px;">If your machine isn’t performing as well as it once was, it doesn’t have to mean the end. Let our team give it some TLC and help upgrade your system to increase storage and work our magic to help make it faster. With a variety of options available for most Apple products, upgrading could be an affordable solution.</p>
+                </div>
+            </div>
+            <div class="columns image notVisible">
+                <img class="lazy" src="https://dummyimage.com/100/00ff48/ff0000.png&text=Image+Found" data-src="Images/bg.jpg" data-srcset="Images/bg.jpg" alt="" style="height: 100%; width: 100%;" />
+            </div>
+        </div>
+    </div>
+
+    <div id="myRecover" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" id="closeRecover"><i class="fa-solid fa-xmark fa-2x closebtn"></i></a>
+
+        <div class="innerNavContainer">
+            <h1 class="bigH1 titles fontPink">[</h1> <h1 class="bigH1 titles">RECOVER</h1> <h1 class="bigH1 titles fontPink">]</h1>
+            <br />
+        </div>
+        <br />
+        <div class="section-container">
+            <div class="columns content">
+                <div class="content-container">
+                    <p class="bigP font2 notVisible" style="padding: 12px 12px;">Accidents happen, but don’t worry, we’re here to help. Being self-obsessed Apple lovers with a stack of great reviews, our success rate in software recoveries is 99%, so relax – if it can be recovered, we can get it.</p>
+                </div>
+            </div>
+            <div class="columns image notVisible">
+                <img class="lazy" src="https://dummyimage.com/100/00ff48/ff0000.png&text=Image+Found" data-src="Images/bg.jpg" data-srcset="Images/bg.jpg" alt="" style="height: 100%; width: 100%;" />
+            </div>
+        </div>
+    </div>
+
+    <div id="myPurchase" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" id="closePurchase"><i class="fa-solid fa-xmark fa-2x closebtn"></i></a>
+
+        <div class="innerNavContainer">
+            <h1 class="bigH1 titles fontPink">[</h1> <h1 class="bigH1 titles">PURCHASE</h1> <h1 class="bigH1 titles fontPink">]</h1>
+            <br />
+        </div>
+        <br />
+
+        <div class="section-container">
+            <div class="columns content">
+                <div class="content-container">
+                    <p class="bigP font2 notVisible" style="padding: 12px 12px;">Purchasing Apple products can be a big investment, but we are committed to being fair on price, with a number of options for most budgets.</p>
+                </div>
+            </div>
+            <div class="columns image notVisible">
+                <img class="lazy" src="https://dummyimage.com/100/00ff48/ff0000.png&text=Image+Found" data-src="Images/bg.jpg" data-srcset="Images/bg.jpg" alt="" style="height: 100%; width: 100%;" />
+            </div>
+        </div>
+
+    </div>
+
+    <div class="fullImg">
+        <div class="container">
+            <div class="gridSection">
+
+                <div class="boxCard hidden">
+
+                    <div class="titles">
+                        <h1 class="bigH1 titles fontPink">[</h1> <h1 class="bigH1 titles">REPAIR</h1> <h1 class="bigH1 titles fontPink">]</h1>
+                    </div>
+
+                    <div class="boxCardBottomRightTxt">
+                        <div class="circleOutlineIcon">
+                            <a id="openRepair"><i class="fa-solid fa-plus fa-2x iconPresets"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="boxCard bx2 hidden">
+
+                    <div class="titles">
+                        <h1 class="bigH1 titles fontPink">[</h1> <h1 class="bigH1 titles">UPGRADE</h1> <h1 class="bigH1 titles fontPink">]</h1>
+                    </div>
+                    <div class="boxCardBottomRightTxt">
+                        <div class="circleOutlineIcon">
+                            <a id="openUpgrade"><i class="fa-solid fa-plus fa-2x iconPresets"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="boxCard bx3 hidden">
+
+                    <div class="titles">
+                        <h1 class="bigH1 titles fontPink">[</h1> <h1 class="bigH1 titles">RECOVER</h1> <h1 class="bigH1 titles fontPink">]</h1>
+                    </div>
+                    <div class="boxCardBottomRightTxt">
+                        <div class="circleOutlineIcon">
+                            <a id="openRecover"><i class="fa-solid fa-plus fa-2x iconPresets"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="boxCard bx4 hidden ">
+
+                    <div class="titles">
+                        <h1 class="bigH1 titles fontPink">[</h1> <h1 class="bigH1 titles">Purchase</h1> <h1 class="bigH1 titles fontPink">]</h1>
+                    </div>
+                    <div class="boxCardBottomRightTxt">
+                        <div class="circleOutlineIcon">
+                            <a id="openPurchase"><i class="fa-solid fa-plus fa-2x iconPresets"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="seperator"></div>
 
     <div class="blue"></div>
     <div class="blue"></div>
