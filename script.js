@@ -32,6 +32,5 @@ document.addEventListener("DOMContentLoaded", function() {
             lazyImageObserver.observe(lazyImage);
         });
     } else {
-        // Possibly fall back to event handlers here
     }
 });

@@ -60,7 +60,7 @@
     font-weight: 350;
 }
 .smallP {
-    font-size: 20px !important;
+    font-size: 18px !important;
 }
 .sticky {
     position: fixed;
@@ -226,7 +226,14 @@ input[type="checkbox"] {
     .iconSection {
         grid-template-columns: 1fr !important;
         grid-template-rows: repeat(3, 1fr) !important;
-        place-items: flex-start !important;
+    }
+    .iconSection .item1 {
+        grid-column: 1 !important;
+    }
+    .biggerTxt {
+        margin-bottom: 0.7rem;
+        font-size: 24px;
+        font-weight: 1000;
     }
     .innerNavContainer {
         width: 85vw !important;
@@ -256,7 +263,7 @@ input[type="checkbox"] {
     background-repeat: no-repeat;
 }
 .section-container2 .columns.content .content-container {
-    padding: 40px 35px;
+    padding: 10px 35px;
 }
 .section-container2 .columns.content .content-container h1 {
     color: black;
@@ -529,7 +536,7 @@ a.coolBtnWhite:hover {
 .circleOutlineIcon {
     display: grid;
     align-items: center;
-    background: #dedede;
+    background: var(--overairGrey);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -646,10 +653,22 @@ a.coolBtnWhite:hover {
 .iconSection {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 250px;
     gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: auto;
+    padding: 30px 15px
+}
+.iconSection .item1 {
+    grid-column: 1 / span 3;
 }
 .noBorderCard {
+    display: flex;
+    flex-direction: column;
     height: 225px;
     width: auto;
 }
@@ -664,4 +683,11 @@ a.coolBtnWhite:hover {
     text-align: center;
     vertical-align: middle;
     z-index: -1;
+}
+.biggerTxt {
+    margin-bottom: 0.7rem;
+}
+.footer {
+    width: 100vw;
+    height: 75px;
 }
