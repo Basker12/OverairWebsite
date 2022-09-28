@@ -6,7 +6,6 @@ repairBox.addEventListener('click', () => {
     document.querySelector('#mySidenav').style.width = "100%";
     showAnim();
 
-/*
     function counter(id, start, end, duration) {
         let obj = document.getElementById(id),
             current = start,
@@ -21,8 +20,7 @@ repairBox.addEventListener('click', () => {
                 }
             }, step);
     }
-    counter("count1", 0, 4000, 250);
-*/
+    counter("count1", 3500, 4000, 100);
 });
 
 closeRepair.addEventListener('click', () => {
@@ -45,7 +43,7 @@ const closeUpgrade = document.querySelector('#closeUpgrade');
 upgradeBox.addEventListener('click', () => {
     document.querySelector('#myUpgrade').style.width = "100%";
     showAnim();
-/*
+
     function counter(id, start, end, duration) {
         let obj = document.getElementById(id),
             current = start,
@@ -60,8 +58,8 @@ upgradeBox.addEventListener('click', () => {
                 }
             }, step);
     }
-    counter("count2", 0, 2000, 250);
- */
+    counter("count2", 1750, 2500, 150);
+
 });
 
 closeUpgrade.addEventListener('click', () => {
@@ -84,7 +82,6 @@ recoverBox.addEventListener('click', () => {
     document.querySelector('#myRecover').style.width = "100%";
     showAnim();
 
-/*
     function counter(id, start, end, duration) {
         let obj = document.getElementById(id),
             current = start,
@@ -99,9 +96,8 @@ recoverBox.addEventListener('click', () => {
                 }
             }, step);
     }
-    counter("count3", 0, 500, 250);
+    counter("count3", 300, 500, 4000);
 
- */
 });
 
 closeRecover.addEventListener('click', () => {
@@ -124,7 +120,6 @@ purchaseBox.addEventListener('click', () => {
     document.querySelector('#myPurchase').style.width = "100%";
     showAnim();
 
-/*
     function counter(id, start, end, duration) {
         let obj = document.getElementById(id),
             current = start,
@@ -139,9 +134,8 @@ purchaseBox.addEventListener('click', () => {
                 }
             }, step);
     }
-    counter("count4", 0, 40, 2000);
+    counter("count4", 22, 40, 4500);
 
- */
 });
 
 closePurchase.addEventListener('click', () => {
