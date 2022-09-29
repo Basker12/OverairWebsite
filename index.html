@@ -17,6 +17,7 @@
     <script src="navScript.js" defer></script>
     <script src="script.js" defer></script>
     <script src="sideScript.js" defer></script>
+    <script src="valScript.js" defer></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font Awesome -->
@@ -33,7 +34,7 @@
             <li><a href="#digi">Digital</a></li>
             <li><a href="#repair">Repair</a></li>
             <li><a href="https://shopoverair.com/" target="_blank">Store</a></li>
-            <li><a href="#">Business + Education</a></li>
+            <li><a href="Business%20+%20Education.html">Business + Education</a></li>
             <li><a href="https://bookings.gettimely.com/overair1/book" target="_blank" class="outline">Book Free Evaluation</a></li>
         </ul>
     </nav>
@@ -268,7 +269,7 @@
 
     <div class="seperator"></div>
 
-    <div class="section-container2"> <!--style="background-color: rgb(248,248,248) !important;"-->
+    <div class="section-container2" style="background-color: rgb(252,252,252);"> <!--style="background-color: rgb(248,248,248) !important;"-->
         <div class="columns content">
             <div class="content-container">
                 <h1 class="font2 bigH1Title">Make sure it's clean, inside and out.</h1>
@@ -322,18 +323,55 @@
             </div>
             <br />
         </div>
-        <div class="columns image" style="background-image: url('Images/OA Service Promo.jpg');"></div>
+        <div class="columns image lazy" style="background-image: url('Images/OA Service Promo.jpg');"></div>
     </div>
 
     <div class="seperator"></div>
 
-    <div class="blue"></div>
-    <div class="blue"></div>
-    <div class="blue"></div>
-    <div class="blue"></div>
+    <form method="POST" id="form" action="https://formsubmit.co/info@overair.co.uk">
+        <div class="section-container">
+            <div class="columns content">
+                <div class="content-container">
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://overair.co.uk/thankyou.html">
+                        <p class="bigH1Title font2" style="padding: 0 !important;">Contact Us</p>
+
+                        <div class="form-control">
+                            <input id="name" type="text" placeholder="Full Name *" name="Name">
+                            <small class="font2" style="display: none;">Error Msg</small>
+                        </div>
+
+                        <div class="form-control">
+                            <input id="email" type="email" placeholder="Email Address *" name="Email">
+                            <small class="font2" style="display: none;">Error Msg</small>
+                        </div>
+
+                        <div class="form-control">
+                            <textarea id="text" placeholder="Message *" rows="2" name="Message"></textarea>
+                            <small class="font2" style="display: none;">Error Msg</small>
+                        </div>
+
+                        <br>
+                        <div class="grid" style="margin-bottom: 2rem;">
+                            <input  type="submit"/>
+                        </div>
+                </div>
+            </div>
+            <div class="columns content">
+                <div class="content-container">
+                    <p class="font2 smallP">8 Roman Walk, Exeter</p>
+                    <a class="font2 smallP" href="mailto:info@overair.co.uk" style="text-decoration: underline !important; color: black !important;">info@overair.co.uk</a>
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.0675256538615!2d-3.527485450820008!3d50.72347822919587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486da69dfe6099bd%3A0xba213cb6c09c703!2sOverAir!5e1!3m2!1sen!2suk!4v1664449134296!5m2!1sen!2suk" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 
     <div class="grid footer">
-        <h3 class="font2">Copyright © 2016 - 2020. All rights reserved. <a href="https://www.overair.co.uk/terms-and-conditions/" style="text-decoration: underline !important; color: black !important;">T&C's. Privacy Policy</a> | Created by <a href="https://devs.overair.co.uk" style="text-decoration: underline !important; color: black !important;">Overair-Digital</a></h3>
+        <h3 class="font2">Copyright © 2016 - 2020. All rights reserved. <a href="T&C.html" style="text-decoration: underline !important; color: black !important;">T&C's. Privacy Policy</a> | Created by <a href="https://devs.overair.co.uk" style="text-decoration: underline !important; color: black !important;">Overair-Digital</a></h3>
     </div>
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
