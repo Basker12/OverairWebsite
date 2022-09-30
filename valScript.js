@@ -41,7 +41,7 @@ function setSuccessFor(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
     small.style.display = "block";
-    small.style.color = "#EC008C";
+    small.style.color = "#86DC3D";
     small.innerText = message;
 }
 
