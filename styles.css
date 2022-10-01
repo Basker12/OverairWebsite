@@ -815,3 +815,15 @@ input[type="submit"]:hover {
     text-decoration: underline !important;
     color: black !important;;
 }
+.getTimelyBox {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    /*transform: translate(-50%, -50%);*/
+    z-index: 99999;
+    border-radius: 0.12em;
+    background-color: rgba(0, 0, 0, 0.3);
+}

@@ -32,5 +32,41 @@ document.addEventListener("DOMContentLoaded", function() {
             lazyImageObserver.observe(lazyImage);
         });
     } else {
+        return null;
     }
 });
+
+const timelyBtn = document.querySelector('#openTimely');
+const timelyBox = document.querySelector('#box');
+
+timelyBtn.addEventListener('click', () => {
+    if (timelyBox.style.display === 'none') {
+        timelyBox.style.display = 'block';
+    }
+});
+
+window.addEventListener('mouseup', function (event) {
+    if (event.target.id !== timelyBox) {
+        timelyBox.style.display = 'none';
+    }
+});
+
+let ohHi = ` 
+                                                                   
+                                                                   
+                                                                   
+                                                   ,--,            
+   ,---.                       __  ,-.           ,--.'|    __  ,-. 
+  '   ,'\\      .---.         ,' ,'/ /|           |  |,   ,' ,'/ /| 
+ /   /   |   /.  ./|  ,---.  '  | |' | ,--.--.   \`--'_   '  | |' | 
+.   ; ,. : .-' . ' | /     \\ |  |   ,'/       \\  ,' ,'|  |  |   ,' 
+'   | |: :/___/ \\: |/    /  |'  :  / .--.  .-. | '  | |  '  :  /   
+'   | .; :.   \\  ' .    ' / ||  | '   \\__\\/: . . |  | :  |  | '    
+|   :    | \\   \\   '   ;   /|;  : |   ," .--.; | '  : |__;  : |    
+ \\   \\  /   \\   \\  '   |  / ||  , ;  /  /  ,.  | |  | '.'|  , ;    
+  \`----'     \\   \\ |   :    | ---'  ;  :   .'   \\;  :    ;---'     
+              '---" \\   \\  /        |  ,     .-./|  ,   /          
+                     \`----'          \`--\`---'     ---\`-'           
+                                                                   
+ `;
+console.log(ohHi);
