@@ -40,8 +40,11 @@ const timelyBtn = document.querySelector('#openTimely');
 const timelyBox = document.querySelector('#box');
 
 timelyBtn.addEventListener('click', () => {
-    if (timelyBox.style.display === 'none') {
+    if (timelyBox.style.display === 'none' && screen.width >= 781) {
         timelyBox.style.display = 'block';
+
+    } else if (timelyBox.style.display === 'none' && screen.width <= 780) {
+        window.open('https://bookings.gettimely.com/overair1/book');
     }
 });
 
@@ -51,11 +54,8 @@ window.addEventListener('mouseup', function (event) {
     }
 });
 
-let ohHi = ` 
-                                                                   
-                                                                   
-                                                                   
-                                                   ,--,            
+let ohHi = `                                                               
+                                                  ,--,            
    ,---.                       __  ,-.           ,--.'|    __  ,-. 
   '   ,'\\      .---.         ,' ,'/ /|           |  |,   ,' ,'/ /| 
  /   /   |   /.  ./|  ,---.  '  | |' | ,--.--.   \`--'_   '  | |' | 
