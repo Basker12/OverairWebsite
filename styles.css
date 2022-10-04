@@ -37,6 +37,10 @@
     font-size: 75px;
     font-weight: 600;
 }
+.testH1 {
+    font-size: 55px;
+    font-weight: 1000;
+}
 .bigH112 {
     font-size: 65px;
     font-weight: 600;
@@ -221,6 +225,9 @@ input[type="checkbox"] {
     }
     .yup {
         font: 600 18px "Roboto Condensed", sans-serif !important;
+    }
+    .testH1 {
+        font-size: 45px !important;
     }
     .typeOut h1 {
         white-space: normal !important;
@@ -820,4 +827,9 @@ input[type="submit"]:hover {
         opacity: 1;
         border: none;
     }
+}
+.squareFullStop {
+    width: 24px;
+    height: 24px;
+    background-color: black;
 }
