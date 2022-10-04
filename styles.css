@@ -222,6 +222,22 @@ input[type="checkbox"] {
     .yup {
         font: 600 18px "Roboto Condensed", sans-serif !important;
     }
+    .typeOut h1 {
+        white-space: normal !important;
+    }
+    .typeOut h1:nth-child(1) {
+        animation: none !important;
+        opacity: 1 !important;
+        border-right: none !important;
+    }
+    .typeOut2 h1 {
+        white-space: normal !important;
+    }
+    .typeOut2 h1:nth-child(1) {
+        animation: none !important;
+        opacity: 1 !important;
+        border-right: none !important;
+    }
 }
 @media (max-width: 1280px) {
     .gridSection {
@@ -276,7 +292,7 @@ input[type="checkbox"] {
 }
 .section-container2 .columns.content .content-container h1 {
     color: white;
-    font-size: 48px;
+    font-size: 65px;
     font-weight: 1000;
 }
 .section-container2 .columns.content .content-container p {
@@ -762,4 +778,44 @@ input[type="submit"]:hover {
     z-index: 99999;
     border-radius: 0.12em;
     background-color: rgba(0, 0, 0, 0.3);
+}
+.hidden2 {
+    opacity: 0;
+}
+.typeOut h1 {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.typeOut h1:nth-child(1){
+    width: 6em;
+    opacity: 0;
+    animation: type 3s steps(60, end);
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+.typeOut2 h1 {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.typeOut2 h1:nth-child(1) {
+    width: 7em;
+    opacity: 0;
+    animation: type 3s steps(60, end);
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .10em solid white;
+    }
+    100% {
+        opacity: 1;
+        border: none;
+    }
 }
