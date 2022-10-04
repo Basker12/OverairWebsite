@@ -226,6 +226,7 @@ input[type="checkbox"] {
         white-space: normal !important;
     }
     .typeOut h1:nth-child(1) {
+        width: 100% !important;
         animation: none !important;
         opacity: 1 !important;
         border-right: none !important;
@@ -234,6 +235,7 @@ input[type="checkbox"] {
         white-space: normal !important;
     }
     .typeOut2 h1:nth-child(1) {
+        width: 100% !important;
         animation: none !important;
         opacity: 1 !important;
         border-right: none !important;
