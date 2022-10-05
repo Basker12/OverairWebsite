@@ -227,7 +227,7 @@ input[type="checkbox"] {
         font: 600 18px "Roboto Condensed", sans-serif !important;
     }
     .testH1 {
-        font-size: 45px !important;
+        font-size: 35px !important;
     }
     .typeOut h1 {
         white-space: normal !important;
@@ -382,7 +382,7 @@ input[type="checkbox"] {
     position: relative;
     padding-block: 16rem;
     margin-block-end: 0;
-    background-image: url("Images/bg.png");
+    background-image: url("Images/bg.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -393,7 +393,7 @@ input[type="checkbox"] {
     position: relative;
     padding-block: 15rem;
     margin-block-end: 0;
-    background-image: url("Images/bg 1.png");
+    background-image: url("Images/bg 1.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -548,7 +548,7 @@ a.coolBtnWhite {
     transition: 0.5s ease;
     cursor: pointer;
 }
-.iconPresets:hover {
+.iconPresets:hover, a.coolBtnWhite:hover {
     transform: translateY(-3px);
 }
 .circleOutlineIcon {
@@ -827,9 +827,4 @@ input[type="submit"]:hover {
         opacity: 1;
         border: none;
     }
-}
-.squareFullStop {
-    width: 24px;
-    height: 24px;
-    background-color: black;
 }
