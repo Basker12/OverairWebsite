@@ -30,6 +30,9 @@
 .fontPink {
     color: var(--overairPink);
 }
+.fontGreen {
+    color: #86DC3D;
+}
 .font2 {
     font-family: 'Roboto Condensed', sans-serif; !important;
 }
@@ -93,11 +96,6 @@ nav {
     justify-content: space-between;
     padding: 0 50px 0 25px;
     flex-wrap: wrap;
-    /*
-    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
-     */
 }
 header {
     height: 80px;
@@ -508,6 +506,10 @@ a.coolBtnWhite {
     margin: 0 auto 0 auto;
     /*border: 1px solid red;*/
 }
+.innerContainer {
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
 .gridSection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -524,11 +526,9 @@ a.coolBtnWhite {
     box-shadow: rgba(3, 8, 20, 0.1) 0 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0 0.075rem 0.175rem;
     height: 225px;
     width: auto;
-    border-radius: 16px;
     transition: all 500ms;
     overflow: hidden;
     background-size: cover;
-    /*background: #f5f5f7 no-repeat center;*/
     background: #fff no-repeat center;
 }
 .titles {
@@ -631,17 +631,20 @@ a.coolBtnWhite {
     }
 }
 .factChecker {
+    /*
     background: rgba(255, 255, 255, 0.19);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+
+     */
     display: grid;
     place-items: center;
     text-align: center;
     width: 100%;
-    height: 450px;
+    height: 300px;
     padding: 12px 12px;
 }
 .gradientTxt {
@@ -659,6 +662,16 @@ a.coolBtnWhite {
 .gradientTxt2 {
     font-weight: 600;
     font-size: 100px;
+    text-align: center;
+    outline: none;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, var(--overairPink) 0%, #E899DC 25%, #D387AB 74%, var(--overairPink) 100%);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: backgroundGrad 40s linear infinite;
+}
+.gradientTxt3 {
     text-align: center;
     outline: none;
     text-transform: uppercase;
