@@ -435,6 +435,17 @@ input[type="checkbox"] {
     -webkit-box-shadow: 5px 5px 12px -4px rgba(0,0,0,0.64);
     box-shadow: 5px 5px 12px -4px rgba(0,0,0,0.64);
 }
+.rec {
+    position: relative;
+    padding-block: 20rem;
+    margin-block-end: 0;
+    background-image: url("BE/rec-min.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 5px 5px 12px -4px rgba(0,0,0,0.64);
+    box-shadow: 5px 5px 12px -4px rgba(0,0,0,0.64);
+}
 a.coolBtn{
     display: inline-block;
     padding: 1em 1.2em;
