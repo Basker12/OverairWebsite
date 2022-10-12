@@ -1,0 +1,102 @@
+@media (max-width: 1280px) {
+    .img1, .img2, .img3, .img4 {
+        height: 327px !important;
+        padding-bottom: 0 !important;
+    }
+    .textContainer {
+        max-width: 83.33333%;
+        margin: auto;
+    }
+    .tH1 {
+        font-size: 20px !important;
+    }
+    .bigbigH1 {
+        font-size: 35px !important;
+        font-weight: 700;
+    }
+}
+.img1 {
+    position: relative;
+    background-image: url("BE/img1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 42%;
+}
+.img2 {
+    position: relative;
+    background-image: url("BE/img2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 42%;
+}
+.img3 {
+    position: relative;
+    background-image: url("BE/img3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 42%;
+}
+.img4 {
+    position: relative;
+    background-image: url("BE/img4.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 42%;
+}
+.classicCenter {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    align-items: center;
+}
+.imgH1 {
+    font-size: 96px;
+    font-weight: 800;
+}
+.bigbigH1 {
+    font-size: 105px;
+    font-weight: 700;
+}
+.spacerTop {
+    margin-top: 5rem;
+}
+.txtSep {
+    margin-top: 1.5rem;
+}
+.textContainer {
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 980px;
+}
+.griddd {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    text-align: left !important;
+}
+/*
+.textContainer {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto 0 auto;
+    padding: 1rem;
+    width: 980px;
+    border: 1px solid red;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    align-items: center;
+}
+ */

@@ -3,7 +3,7 @@
 
 :root {
     --overairPink: #EC008C;
-    --overairGrey: #6B6969;
+    --overairGrey: #8f8e8e;
 }
 @font-face {
     font-family: 'Roboto', sans-serif;
@@ -13,7 +13,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+body {
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 .wrapperOverflow {
     overflow-x: hidden;
@@ -34,7 +37,7 @@
     color: #86DC3D;
 }
 .font2 {
-    font-family: 'Roboto Condensed', sans-serif; !important;
+    font-family: 'Roboto', sans-serif !important;
 }
 .bigH1 {
     font-size: 75px;
@@ -857,12 +860,6 @@ input[type="submit"]:hover {
         border: none;
     }
 }
-.oldSchoolCenterDiv {
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-50%, 50%);
-}
 .blog-card {
     margin: 1rem auto;
     box-shadow: 0 3px 7px -1px rgba(0, 0, 0, .1);
@@ -912,4 +909,22 @@ input[type="submit"]:hover {
     width: 75%;
     top: -0.75rem;
     border-radius: 3px;
+}
+#changeTxt:before {
+    content: 'Design & Agencies.';
+    animation: swap 11s infinite ease;
+}
+@keyframes swap {
+    20% {
+        content: 'Programmers.';
+    }
+    40% {
+        content: 'Universities.';
+    }
+    60% {
+        content: 'Schools.';
+    }
+    80% {
+        content: 'Accounting.';
+    }
 }
