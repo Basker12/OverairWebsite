@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-
 :root {
     --overairPink: #EC008C;
     --overairGrey: #8f8e8e;
@@ -16,7 +15,8 @@
     font-family: 'Roboto Condensed', sans-serif;;
 }
 body {
-    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    -webkit-text-stroke: 1px transparent;
 }
 .wrapperOverflow {
     overflow-x: hidden;
@@ -839,7 +839,7 @@ input[type="submit"]:hover {
     white-space: nowrap;
 }
 .typeOut2 h1:nth-child(1) {
-    width: 7em;
+    width: 7.5em;
     opacity: 0;
     animation: type 3s steps(60, end);
     animation-delay: 3.5s;
@@ -909,22 +909,4 @@ input[type="submit"]:hover {
     width: 75%;
     top: -0.75rem;
     border-radius: 3px;
-}
-#changeTxt:before {
-    content: 'Design & Agencies.';
-    animation: swap 11s infinite ease;
-}
-@keyframes swap {
-    20% {
-        content: 'Programmers.';
-    }
-    40% {
-        content: 'Universities.';
-    }
-    60% {
-        content: 'Schools.';
-    }
-    80% {
-        content: 'Accounting.';
-    }
 }
