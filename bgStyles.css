@@ -170,6 +170,21 @@ input[type="checkbox"] {
         border-radius: 0 !important;
         padding: 0 0 !important;
     }
+    .arrowAppear::after {
+        position: relative;
+        bottom: 3px;
+        width: 30px !important;
+        height: 24px !important;
+        margin-left: 8px !important;
+    }
+    .photo-grid {
+        grid-template-rows: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .innerContainer {
+        width: 95vw !important;
+        margin: 0 auto 0 auto !important;
+    }
 }
 .img1, .img2, .img3, .img4 {
     position: relative;
@@ -206,6 +221,9 @@ input[type="checkbox"] {
 .bigbigH1 {
     font-size: 105px;
     font-weight: 700;
+}
+.linkP {
+    font-size: 24px;
 }
 .spacerTop {
     margin-top: 5rem;
@@ -246,6 +264,7 @@ input[type="checkbox"] {
 }
 #changeTxt:before {
     content: 'Design & Agencies.';
+    /*text-decoration: underline !important;*/
     animation: swap 11s infinite ease;
 }
 @keyframes swap {
@@ -281,4 +300,176 @@ input[type="checkbox"] {
     .imgH1 {
         font-size: 48px !important;
     }
+    .linkP {
+        font-size: 18px !important;
+    }
+}
+.arrowAppear {
+    display: flex;
+    align-content: center;
+    justify-content: start;
+}
+.arrowAppear::after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 30px;
+    overflow: hidden;
+    background-image: url("BE/righArrow.png");
+
+    transition: width 200ms, margin-left 200ms;
+}
+.arrowAppear:is(:hover,:focus)::after {
+    width: 30px;
+    margin-left: 8px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.7s cubic-bezier(.57,.21,.69,1.25);
+    padding-top: 60px;
+    display: grid;
+    place-items: center;
+}
+.sidenav a {
+    transition: 0.5s;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 11px 20px;
+    color: black !important;
+}
+.container {
+    width: 95vw;
+    margin: 0 auto 0 auto;
+    height: 75%;
+}
+.innerContainer {
+    display: grid;
+    place-items: center;
+    width: 60vw;
+    margin: 0 auto 0 auto;
+}
+.photo-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+/* Medium screens */
+@media screen and (min-width: 600px) {
+    .card-tall {
+        grid-row: span 2 / auto;
+    }
+    .card-wide {
+        grid-column: span 2 / auto;
+    }
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFF;
+    box-shadow: rgba(3, 8, 20, 0.1) 0 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0 0.075rem 0.175rem;
+    overflow: hidden;
+}
+.imgSectionL {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 40%;
+    height: 275px;
+    float: left;
+}
+.imgSectionR {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 40%;
+    height: 275px;
+    float: right;
+}
+.contentSectionR {
+    float: right;
+    display: inline-block;
+    width: 60%;
+    padding: 12px 12px;
+}
+.contentSectionL {
+    float: right;
+    display: inline-block;
+    width: 60%;
+    padding: 12px 12px;
+}
+.normalImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 325px;
+}
+.normalContent {
+    padding: 12px 12px;
+}
+@media screen and (max-width:960px) {
+    .card {
+        flex-flow: wrap row;
+    }
+    .card .imgSectionL {
+        order: 1;
+        display: block;
+        width: 100%;
+        height: 200px;
+        float: none !important;
+        aspect-ratio: 1 / 1;
+    }
+    .card .contentSectionR {
+        order: 2;
+        display: block;
+        width: 100%;
+    }
+    .card .imgSectionR {
+        order: 1;
+        display: block;
+        width: 100%;
+        height: 200px;
+        float: none !important;
+        aspect-ratio: 1 / 1;
+    }
+    .card .contentSectionL {
+        order: 2;
+        display: block;
+        width: 100%;
+    }
+    .card .normalImage {
+        width: 100%;
+        display: block;
+        order: 1;
+        height: 200px;
+        aspect-ratio: 1 / 1;
+    }
+    .card .normalContent {
+        width: 100%;
+        display: block;
+        order: 2;
+    }
+}
+.notVisible {
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+.visible {
+    opacity: 1;
+    transform: translateX(0%);
 }

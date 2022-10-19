@@ -756,8 +756,13 @@ input[type="email"], input[type="text"], textarea {
     margin: 20px 2px;
     box-shadow: 12.5px 12.5px 10px rgb(0 0 0 / 4%), 100px 100px 80px rgb(0 0 0 / 7%);
     outline: none;
-    border: 1px solid black;
     border-radius: 0.12em;
+    border: none;
+    background-color: #fbfbfd;
+    border-bottom: 1px solid var(--overairGrey);
+}
+input[type="email"]:focus, input[type="text"]:focus, textarea:focus {
+    border-bottom: 1px solid var(--overairPink);
 }
 input[type="submit"] {
     cursor: pointer;
