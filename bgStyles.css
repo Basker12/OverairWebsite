@@ -313,7 +313,7 @@ input[type="checkbox"] {
 
     transition: width 200ms, margin-left 200ms;
 }
-.arrowAppear:is(:hover,:focus)::after {
+.arrowAppear:is(:hover, :focus)::after {
     width: 50px;
     margin-left: 8px;
 }
