@@ -3,6 +3,7 @@
 :root {
     --overairPink: #EC008C;
     --overairGrey: #8f8e8e;
+    --gifttechGreen: #5EB130FF;
 }
 @font-face {
     font-family: 'Roboto', sans-serif;
@@ -34,7 +35,7 @@ body {
     color: var(--overairPink);
 }
 .fontGreen {
-    color: #86DC3D;
+    color: var(--gifttechGreen);
 }
 .font2 {
     font-family: 'Roboto', sans-serif !important;
@@ -290,6 +291,10 @@ input[type="checkbox"] {
     .tContainer {
         width: 95vw !important;
     }
+    .textContainer {
+        max-width: 83.33333%;
+        margin: auto !important;
+    }
 }
 @media (max-width: 1178px) {
     .gradientTxt2 {
@@ -526,6 +531,11 @@ a.coolBtnWhite {
 }
 .seperator {
     height: 50px;
+    width: 100vw;
+    background-color: white;
+}
+.smallSep {
+    height: 25px;
     width: 100vw;
     background-color: white;
 }
@@ -872,53 +882,17 @@ input[type="submit"]:hover {
         border: none;
     }
 }
-.blog-card {
-    margin: 1rem auto;
-    box-shadow: 0 3px 7px -1px rgba(0, 0, 0, .1);
-    margin-bottom: 1.6%;
-    background: #fff;
-    line-height: 1.5;
-    overflow: hidden;
-    z-index: 0;
+.textContainer {
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 980px;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
 }
-.blog-card .meta {
-    position: relative;
-    z-index: 0;
-    height: 200px;
-}
-.blog-card .photo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center;
-}
-.blog-card .description {
-    padding: 1rem;
-    background: #fff;
-    position: relative;
-    z-index: 1;
-}
-.blog-card .description h1 {
-    line-height: 1;
-    margin: 0;
-    font-size: 1.7rem;
-}
-.blog-card p {
-    position: relative;
-    margin: 1rem 0 0;
-}
-.blog-card p:first-of-type {
-    margin-top: 1.25rem;
-}
-.blog-card p:first-of-type:before {
-    content: "";
-    position: absolute;
-    height: 5px;
-    background: var(--overairPink);
-    width: 75%;
-    top: -0.75rem;
-    border-radius: 3px;
+.griddd {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    text-align: center !important;
 }
