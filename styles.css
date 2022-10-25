@@ -113,6 +113,10 @@ header {
     border-radius: 50px;
     /*padding: 10px 0;*/
 }
+.outline:hover {
+    background-color: var(--overairPink);
+    color: white !important;
+}
 nav .logoImage {
     height: 75%;
 }
@@ -282,6 +286,9 @@ input[type="checkbox"] {
     }
     .noBorderCard {
         height: 175px !important;
+    }
+    .tContainer {
+        width: 95vw !important;
     }
 }
 @media (max-width: 1178px) {

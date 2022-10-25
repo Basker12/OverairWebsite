@@ -55,27 +55,23 @@ closeSection4.addEventListener('click', () => {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    let lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
+    var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
 
     if ("IntersectionObserver" in window) {
-        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+        let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
             entries.forEach(function(entry) {
                 if (entry.isIntersecting) {
-                    let lazyImage = entry.target;
-                    lazyImage.src = lazyImage.dataset.src;
-                    lazyImage.srcset = lazyImage.dataset.srcset;
-                    lazyImage.classList.remove("lazy");
-                    lazyImageObserver.unobserve(lazyImage);
+                    entry.target.classList.add("vissy");
+                    lazyBackgroundObserver.unobserve(entry.target);
                 }
             });
         });
 
-        lazyImages.forEach(function(lazyImage) {
-            lazyImageObserver.observe(lazyImage);
+        lazyBackgrounds.forEach(function(lazyBackground) {
+            lazyBackgroundObserver.observe(lazyBackground);
         });
-    } else {
-        return null;
     }
+    return null;
 });
 
 function showAnim () {

@@ -61,6 +61,10 @@ header {
     border-radius: 50px;
     /*padding: 10px 0;*/
 }
+.outline:hover {
+    background-color: var(--overairPink);
+    color: white !important;
+}
 nav .logoImage {
     height: 75%;
 }
@@ -171,10 +175,10 @@ input[type="checkbox"] {
         padding: 0 0 !important;
     }
     .arrowAppear::after {
-        position: relative;
-        bottom: 3px;
-        width: 30px !important;
-        height: 24px !important;
+        position: relative !important;
+        bottom: 13px !important;
+        width: 50px !important;
+        height: 50px !important;
         margin-left: 8px !important;
     }
     .photo-grid {
@@ -195,18 +199,6 @@ input[type="checkbox"] {
     height: 0;
     padding-bottom: 32%;
 }
-.img1 {
-    background-image: url("BE/img1.webp");
-}
-.img2 {
-    background-image: url("BE/img2.webp");
-}
-.img3 {
-    background-image: url("BE/img3.webp");
-}
-.img4 {
-    background-image: url("BE/img4.webp");
-}
 .classicCenter {
     position: absolute;
     left: 50%;
@@ -223,7 +215,7 @@ input[type="checkbox"] {
     font-weight: 700;
 }
 .linkP {
-    font-size: 24px;
+    font-size: 36px;
 }
 .spacerTop {
     margin-top: 5rem;
@@ -298,7 +290,7 @@ input[type="checkbox"] {
         font-weight: 700;
     }
     .imgH1 {
-        font-size: 48px !important;
+        font-size: 40px !important;
     }
     .linkP {
         font-size: 18px !important;
@@ -310,17 +302,19 @@ input[type="checkbox"] {
     justify-content: start;
 }
 .arrowAppear::after {
+    position: relative;
+    bottom: 2px;
     content: " ";
     display: block;
     width: 0;
-    height: 30px;
+    height: 50px;
     overflow: hidden;
-    background-image: url("BE/righArrow.png");
+    background-image: url("BE/rightArrow.png");
 
     transition: width 200ms, margin-left 200ms;
 }
 .arrowAppear:is(:hover,:focus)::after {
-    width: 30px;
+    width: 50px;
     margin-left: 8px;
 }
 .sidenav {
@@ -472,4 +466,33 @@ input[type="checkbox"] {
 .visible {
     opacity: 1;
     transform: translateX(0%);
+}
+.one {
+    background-image: url("BE/img1-blurry.jpg");
+}
+.one.vissy {
+    background-image: url("BE/img1.webp");
+}
+.two {
+    background-image: url("BE/img2-blurry.jpg");
+}
+.two.vissy {
+    background-image: url("BE/img3.webp");
+}
+.three {
+    background-image: url("BE/img3-blurry.jpg");
+}
+.three.vissy {
+    background-image: url("BE/img4.webp");
+}
+.four {
+    background-image: url("BE/img4-blurry.jpg");
+}
+.four.vissy {
+    background-image: url("BE/img2.jpg");
+}
+.seperator {
+    height: 50px;
+    width: 100vw;
+    background-color: white;
 }
