@@ -171,6 +171,9 @@ input[type="checkbox"] {
     nav {
         padding: 0 40px 0 50px;
     }
+    .testH12 {
+        font-size: 24px !important;
+    }
 }
 @media (max-width: 960px) {
     html {
@@ -258,6 +261,9 @@ input[type="checkbox"] {
         opacity: 1 !important;
         border-right: none !important;
     }
+    .testH12 {
+        font-size: 18px !important;
+    }
 }
 @media (max-width: 1280px) {
     .gridSection {
@@ -272,6 +278,10 @@ input[type="checkbox"] {
         grid-template-columns: 1fr !important;
         grid-template-rows: repeat(3, 1fr) !important;
         gap: 1.5rem !important;
+    }
+    .onelineGrid {
+        grid-template-rows: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr) !important;
     }
     .iconSection .item1 {
         grid-column: 1 !important;
@@ -446,7 +456,7 @@ input[type="checkbox"] {
 }
 .loc {
     position: relative;
-    padding-block: 20rem;
+    padding-block: 16rem;
     margin-block-end: 0;
     background-image: url("Images/super-snapper-2AEWZWmfuWs-unsplash.jpg");
     background-position: center;
@@ -899,4 +909,13 @@ input[type="submit"]:hover {
 }
 .txtSep {
     margin-top: 1.5rem;
+}
+.onelineGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0.5rem;
+}
+.testH12 {
+    font-size: 30px;
 }
